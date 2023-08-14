@@ -6,6 +6,6 @@ from src.base_classes.response import Response_pydantic
 from src.pydantic_schemas.post import Post
 
 def test_getting_posts():
-    r = requests.get(url = SERVICE_URL)
+    r = requests.get(SERVICE_URL)
     response = Response_pydantic(r)
     response.assert_status_code(200).validate(Post)

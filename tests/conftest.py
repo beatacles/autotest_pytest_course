@@ -1,6 +1,7 @@
 import pytest
 import requests
 from config import API_URL, SERVICE_URL
+from src.generators.player import Player
 
 
 @pytest.fixture
@@ -17,4 +18,8 @@ def _calculate(a,b):
 @pytest.fixture
 def calculate():
     return _calculate
+
+@pytest.fixture
+def get_generated_player():
+    return Player()
 

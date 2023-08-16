@@ -30,6 +30,12 @@ def test_calculation_char_number(calculate):
 def test_calculation_char_char(calculate):
     print(calculate("a", "b"))
 
+def test_failing():
+    """
+    Тест намеренно завален для проверки работы Allure
+    """
+    assert 1==2
+
 
 @pytest.mark.development
 @pytest.mark.production

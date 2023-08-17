@@ -16,8 +16,7 @@ class Player:
         return self
 
     def set_avatar(self,
-                   avatar = "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user"
-                            "-computer-icons-software-developer-avatar-child-face-heroes.png"):
+                   avatar = "https://avatar-user.png"):
         self.result['avatar'] = avatar
         return self
 

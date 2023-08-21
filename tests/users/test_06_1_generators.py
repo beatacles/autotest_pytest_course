@@ -19,8 +19,9 @@ def test_user_generator_update_data(get_generated_player):
         ['localize', 'en', 'countries'], Player_localization('fr_FR').build()).build()
     print(object_to_send)
 
+
 @pytest.mark.parametrize("localizations", ['fr', 'de', 'it', 'cn'])
-def test_user_generator_update_data(get_generated_player,localizations):
+def test_user_generator_update_data(get_generated_player, localizations):
     object_to_send = get_generated_player.update_inner_value(
         ['localize', localizations], Player_localization('fr_FR').build()).build()
     print(object_to_send)

@@ -1,5 +1,5 @@
 from pydantic import BaseModel, HttpUrl, UUID4, EmailStr
-from pydantic.types import PastDate, FutureDate, List, PaymentCardNumber,
+from pydantic.types import PastDate, FutureDate, List, PaymentCardNumber
 from pydantic.networks import IPv4Network, IPv6Network
 from pydantic.color import Color
 
